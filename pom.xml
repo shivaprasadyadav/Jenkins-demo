@@ -1,20 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <groupId>test</groupId>
-  <artifactId>simple-app</artifactId>
-  <version>1.0</version>
-  <packaging>war</packaging>
+    <modelVersion>4.0.0</modelVersion>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.3.2</version>
-        <configuration>
-          <failOnMissingWebXml>false</failOnMissingWebXml>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    <groupId>com.example</groupId>
+    <artifactId>miniproject</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+
+    <build>
+        <finalName>miniproject</finalName>
+    </build>
+
 </project>
