@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: microservices
+  labels:
+    project: devops-portfolio
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: microservices
+data:
+  environment: "production"
+  log_level: "info"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-secret
+  namespace: microservices
+type: Opaque
+stringData:
+  host: "localhost"
+  password: "changeme"
+
